@@ -1,3 +1,6 @@
-#banner-section{
-    background-image: linear-gradient(to right, #013223, #006747 , #013223 );
+#banner-section {
+    background-image: linear-gradient(to right,
+            #013223 0%,
+            #006747 50%,
+            #013223 100%);
 }
