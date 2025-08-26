@@ -1,11 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Emergency Hotline</title>
 </head>
+
 <body>
-    
+
+    <!-- Header section  -->
+    <header>
+        <nav class="container mx-auto flex justify-between items-center">
+            <div id="branding-logo" class="flex items-center gap-3">
+                <img src="assets/logo.png" alt="" class="h-10 w-10">
+                <h1 class="text-xl font-bold">Emergency<br>Service</h1>
+            </div>
+
+            <div id="counter-icons-container" class="flex items-center space-x-4">
+                <div class="counter-icons flex items-center gap-2 px-3 py-1 bg-black/25 rounded-full">
+                    <h3 id="favorite-counter">0</h3>
+                    <img src="assets/heart.png" alt="" class="h-6 w-6">
+                </div>
+
+                <div class="counter-icons flex items-center gap-2 px-3 py-1 bg-black/25 rounded-full">
+                    <img src="assets/coin.png" alt="" class="h-6 w-6">
+                    <h3 id="coin-counter">100</h3>
+                </div>
+
+                <div class="counter-icons bg-emerald-500 text-white px-5 py-1 rounded-full">
+                    <h3 id="copy-counter-container"><span id="copy-counter">0</span> Copy</h3>
+                </div>
+
+
+            </div>
+        </nav>
+
+
+        <!-- Banner section  -->
+        <section id="banner-section" class=" my-10 flex flex-col items-center text-center gap-4 text-white">
+            <img src="assets/logo-dark.png" alt="" class="h-20 w-20">
+            <h1 class="text-4xl font-bold">জরুরি সেবা ডিরেক্টরি</h1>
+            <p class="text-base">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+        </section>
+    </header>
+
 </body>
+
 </html>
