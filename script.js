@@ -1,7 +1,8 @@
 const favoriteCounterElement = document.getElementById('favorite-counter');
 const coinCounterElement = document.getElementById('coin-counter');
 const copyCounterElement = document.getElementById('copy-counter');
-const callHistoryContainer = document.getElementById('history-list-container');
+const callHistoryContainerElement = document.getElementById('history-list-container');
+const clearButton = document.getElementById('btn-clear');
 
 
 
@@ -64,7 +65,7 @@ for (const button of callButtons) {
         `;
 
 
-            callHistoryContainer.insertAdjacentHTML('afterbegin', callHistoryItemHTML);
+            callHistoryContainerElement.insertAdjacentHTML('afterbegin', callHistoryItemHTML);
         } else {
             alert("You have no coins left to call");
         }
@@ -83,6 +84,11 @@ for (const button of copyButtons) {
 
     });
 }
+
+
+clearButton.addEventListener('click', () => {
+    callHistoryContainerElement.innerHTML = '';
+});
 
 
 
