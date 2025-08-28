@@ -14,24 +14,30 @@
 
     <!-- Header section  -->
     <header>
-        <nav class="container mx-auto flex justify-between items-center">
+        <nav class="container mx-auto flex justify-between items-center relative">
             <div id="branding-logo" class="flex items-center gap-3">
                 <img src="assets/logo.png" alt="" class="h-10 w-10">
                 <p class="text-xl font-bold">Emergency<br>Service</p>
             </div>
 
-            <div id="counter-icons-container" class="flex items-center space-x-4">
-                <div class="counter-icons flex items-center gap-2 px-3 py-1 bg-black/25 rounded-full">
-                    <p id="favorite-counter">0</p>
+            <button id="btn-hamburger" class="p-2 sm:hidden">
+                <img src="assets/hamburger-icon.png" alt="" class="w-10 h-10">
+            </button>
+
+            <div id="counter-icons-container" 
+            class="hidden sm:flex flex-col sm:flex-row absolute sm:static top-full right-0 mt-2 sm:mt-0 items-end space-y-4 sm:space-y-0 space-x-0 sm:space-x-4 p-6 sm:p-0 bg-emerald-800 sm:bg-transparent">
+
+                <div class="counter-icons flex items-center gap-2 px-3 py-1 bg-black/25 rounded-full w-fit">
+                    <p id="favorite-counter" class="text-white sm:text-black">0</p>
                     <img src="assets/heart.png" alt="" class="h-6 w-6">
                 </div>
 
-                <div class="counter-icons flex items-center gap-2 px-3 py-1 bg-black/25 rounded-full">
+                <div class="counter-icons flex items-center gap-2 px-3 py-1 bg-black/25 rounded-full w-fit">
                     <img src="assets/coin.png" alt="" class="h-6 w-6">
-                    <p id="coin-counter">100</p>
+                    <p id="coin-counter" class="text-white sm:text-black">100</p>
                 </div>
 
-                <div class="counter-icons bg-emerald-500 text-white px-5 py-1 rounded-full">
+                <div class="counter-icons bg-emerald-500 text-white px-5 py-1 rounded-full w-fit">
                     <p id="copy-counter-container"><span id="copy-counter">0</span> Copy</p>
                 </div>
 
@@ -68,7 +74,7 @@
                                     <img src="assets/emergency.png" alt="" class="w-10 h-10">
                                 </div>
                                 <button id="national-emergency-favorite-icon" class="favorite-icon">
-                                    <img src="assets/heart.png" alt="" class="w-10 h-10">
+                                    <img src="assets/empty-heart-icon.png" alt="" class="w-10 h-10">
                                 </button>
                             </div>
 
@@ -103,7 +109,7 @@
                                     <img src="assets/emergency.png" alt="" class="w-10 h-10">
                                 </div>
                                 <button id="police-favorite-icon" class="favorite-icon">
-                                    <img src="assets/heart.png" alt="" class="w-10 h-10">
+                                    <img src="assets/empty-heart-icon.png" alt="" class="w-10 h-10">
                                 </button>
                             </div>
 
@@ -138,7 +144,7 @@
                                     <img src="assets/emergency.png" alt="" class="w-10 h-10">
                                 </div>
                                 <button id="fire-service-favorite-icon" class="favorite-icon">
-                                    <img src="assets/heart.png" alt="" class="w-10 h-10">
+                                    <img src="assets/empty-heart-icon.png" alt="" class="w-10 h-10">
                                 </button>
                             </div>
 
@@ -153,7 +159,7 @@
                             </div>
 
                             <div class="grid grid-cols-2 gap-4 mt-6">
-                                <button id="fire-service-btn-copy"
+                                <button id="fire-btn-copy"
                                     class="flex items-center justify-center gap-2 py-2 rounded-lg border border-gray-400">
                                     <img src="assets/copy-icon.png" alt="" class="w-5 h-5">
                                     <span>Copy</span>
@@ -176,7 +182,7 @@
                         <!-- Call History Heading  -->
                         <div id="history-list-headings" class="flex justify-between items-center pb-4">
                             <div class="flex justify-between items-center gap-2">
-                                <img src="assets/heart.png" alt="" class="w-10 h-10">
+                                <img src="assets/time-icon.png" alt="" class="w-10 h-10">
                                 <h2 class="text-xl font-semibold">Call History</h2>
                             </div>
 

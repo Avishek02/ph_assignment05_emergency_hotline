@@ -3,6 +3,8 @@ const coinCounterElement = document.getElementById('coin-counter');
 const copyCounterElement = document.getElementById('copy-counter');
 const callHistoryContainerElement = document.getElementById('history-list-container');
 const clearButton = document.getElementById('btn-clear');
+const hamburgerButton = document.getElementById('btn-hamburger');
+const mobileMenu = document.getElementById('counter-icons-container');
 
 
 
@@ -82,6 +84,19 @@ for (const button of copyButtons) {
         copyCount++;
         copyCounterElement.textContent = copyCount;
 
+
+
+        const servicePrefix = button.id.replace('-btn-copy', '');
+        const serviceNumberElement = document.getElementById(`${servicePrefix}-service-number`);
+        const numberToCopy = serviceNumberElement.textContent;
+
+
+        navigator.clipboard.writeText(numberToCopy).then(() => {
+            alert(`${numberToCopy} copied to clipboard`);
+        }).catch(err =>{
+            console.error('could not copy text', err);
+        });
+
     });
 }
 
@@ -91,4 +106,15 @@ clearButton.addEventListener('click', () => {
 });
 
 
+
+
+
+
+
+
+// Mobile responsive 
+hamburgerButton.addEventListener('click', () => {
+    // alert('hamberger clicked')
+    mobileMenu.classList.toggle('hidden');
+});
 
