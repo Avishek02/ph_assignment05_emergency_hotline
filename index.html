@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
     <title>Emergency Hotline</title>
 </head>
 
@@ -16,22 +17,22 @@
         <nav class="container mx-auto flex justify-between items-center">
             <div id="branding-logo" class="flex items-center gap-3">
                 <img src="assets/logo.png" alt="" class="h-10 w-10">
-                <h1 class="text-xl font-bold">Emergency<br>Service</h1>
+                <p class="text-xl font-bold">Emergency<br>Service</p>
             </div>
 
             <div id="counter-icons-container" class="flex items-center space-x-4">
                 <div class="counter-icons flex items-center gap-2 px-3 py-1 bg-black/25 rounded-full">
-                    <h3 id="favorite-counter">0</h3>
+                    <p id="favorite-counter">0</p>
                     <img src="assets/heart.png" alt="" class="h-6 w-6">
                 </div>
 
                 <div class="counter-icons flex items-center gap-2 px-3 py-1 bg-black/25 rounded-full">
                     <img src="assets/coin.png" alt="" class="h-6 w-6">
-                    <h3 id="coin-counter">100</h3>
+                    <p id="coin-counter">100</p>
                 </div>
 
                 <div class="counter-icons bg-emerald-500 text-white px-5 py-1 rounded-full">
-                    <h3 id="copy-counter-container"><span id="copy-counter">0</span> Copy</h3>
+                    <p id="copy-counter-container"><span id="copy-counter">0</span> Copy</p>
                 </div>
 
 
@@ -66,28 +67,28 @@
                                 <div>
                                     <img src="assets/emergency.png" alt="" class="w-10 h-10">
                                 </div>
-                                <button>
+                                <button id="national-emergency-favorite-icon">
                                     <img src="assets/heart.png" alt="" class="w-10 h-10">
                                 </button>
                             </div>
 
                             <div class="mt-4 ">
-                                <h2>জাতীয় জরুরি সেবা</h2>
+                                <p id="national-emergency-service-name">জাতীয় জরুরি সেবা</p>
                                 <p>National Emergency</p>
                             </div>
 
                             <div class="mt-4 ">
-                                <h2>999</h2>
+                                <p id="national-emergency-service-number">999</p>
                                 <p class="inline-block bg-gray-200 rounded-full px-3 py-2">সার্বজনীন</p>
                             </div>
 
                             <div class="grid grid-cols-2 gap-4 mt-6">
-                                <button
+                                <button id="national-emergency-btn-copy"
                                     class="flex items-center justify-center gap-2 py-2 rounded-lg border border-gray-400">
                                     <img src="assets/copy-icon.png" alt="" class="w-5 h-5">
                                     <span>Copy</span>
                                 </button>
-                                <button
+                                <button id="national-emergency-btn-call"
                                     class="flex items-center justify-center gap-2 py-2 rounded-lg bg-emerald-500 text-white">
                                     <img src="assets/call-icon.png" alt="" class="w-5 h-5">
                                     <span>Call</span>
@@ -101,28 +102,28 @@
                                 <div>
                                     <img src="assets/emergency.png" alt="" class="w-10 h-10">
                                 </div>
-                                <button>
+                                <button id="police-favorite-icon">
                                     <img src="assets/heart.png" alt="" class="w-10 h-10">
                                 </button>
                             </div>
 
                             <div class="mt-4 ">
-                                <h2>জাতীয় জরুরি সেবা</h2>
+                                <p id="police-service-name">পুলিশ</p>
                                 <p>National Emergency</p>
                             </div>
 
                             <div class="mt-4 ">
-                                <h2>999</h2>
+                                <p id="police-service-number">111</p>
                                 <p class="inline-block bg-gray-200 rounded-full px-3 py-2">সার্বজনীন</p>
                             </div>
 
                             <div class="grid grid-cols-2 gap-4 mt-6">
-                                <button
+                                <button id="police-btn-copy"
                                     class="flex items-center justify-center gap-2 py-2 rounded-lg border border-gray-400">
                                     <img src="assets/copy-icon.png" alt="" class="w-5 h-5">
                                     <span>Copy</span>
                                 </button>
-                                <button
+                                <button id="police-btn-call"
                                     class="flex items-center justify-center gap-2 py-2 rounded-lg bg-emerald-500 text-white">
                                     <img src="assets/call-icon.png" alt="" class="w-5 h-5">
                                     <span>Call</span>
@@ -136,28 +137,28 @@
                                 <div>
                                     <img src="assets/emergency.png" alt="" class="w-10 h-10">
                                 </div>
-                                <button>
+                                <button id="fire-service-favorite-icon">
                                     <img src="assets/heart.png" alt="" class="w-10 h-10">
                                 </button>
                             </div>
 
                             <div class="mt-4 ">
-                                <h2>জাতীয় জরুরি সেবা</h2>
+                                <p id="fire-service-name">ফায়ার সার্ভিস</p>
                                 <p>National Emergency</p>
                             </div>
 
                             <div class="mt-4 ">
-                                <h2>999</h2>
+                                <p id="fire-service-number">333</p>
                                 <p class="inline-block bg-gray-200 rounded-full px-3 py-2">সার্বজনীন</p>
                             </div>
 
                             <div class="grid grid-cols-2 gap-4 mt-6">
-                                <button
+                                <button id="fire-service-btn-copy"
                                     class="flex items-center justify-center gap-2 py-2 rounded-lg border border-gray-400">
                                     <img src="assets/copy-icon.png" alt="" class="w-5 h-5">
                                     <span>Copy</span>
                                 </button>
-                                <button
+                                <button id="fire-service-btn-call"
                                     class="flex items-center justify-center gap-2 py-2 rounded-lg bg-emerald-500 text-white">
                                     <img src="assets/call-icon.png" alt="" class="w-5 h-5">
                                     <span>Call</span>
@@ -165,215 +166,9 @@
                             </div>
                         </div>
 
-                        <div class="service-cards bg-white p-6 rounded-lg shadow-sm">
 
-                            <div class="flex justify-between items-center">
-                                <div>
-                                    <img src="assets/emergency.png" alt="" class="w-10 h-10">
-                                </div>
-                                <button>
-                                    <img src="assets/heart.png" alt="" class="w-10 h-10">
-                                </button>
-                            </div>
 
-                            <div class="mt-4 ">
-                                <h2>জাতীয় জরুরি সেবা</h2>
-                                <p>National Emergency</p>
-                            </div>
 
-                            <div class="mt-4 ">
-                                <h2>999</h2>
-                                <p class="inline-block bg-gray-200 rounded-full px-3 py-2">সার্বজনীন</p>
-                            </div>
-
-                            <div class="grid grid-cols-2 gap-4 mt-6">
-                                <button
-                                    class="flex items-center justify-center gap-2 py-2 rounded-lg border border-gray-400">
-                                    <img src="assets/copy-icon.png" alt="" class="w-5 h-5">
-                                    <span>Copy</span>
-                                </button>
-                                <button
-                                    class="flex items-center justify-center gap-2 py-2 rounded-lg bg-emerald-500 text-white">
-                                    <img src="assets/call-icon.png" alt="" class="w-5 h-5">
-                                    <span>Call</span>
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="service-cards bg-white p-6 rounded-lg shadow-sm">
-
-                            <div class="flex justify-between items-center">
-                                <div>
-                                    <img src="assets/emergency.png" alt="" class="w-10 h-10">
-                                </div>
-                                <button>
-                                    <img src="assets/heart.png" alt="" class="w-10 h-10">
-                                </button>
-                            </div>
-
-                            <div class="mt-4 ">
-                                <h2>জাতীয় জরুরি সেবা</h2>
-                                <p>National Emergency</p>
-                            </div>
-
-                            <div class="mt-4 ">
-                                <h2>999</h2>
-                                <p class="inline-block bg-gray-200 rounded-full px-3 py-2">সার্বজনীন</p>
-                            </div>
-
-                            <div class="grid grid-cols-2 gap-4 mt-6">
-                                <button
-                                    class="flex items-center justify-center gap-2 py-2 rounded-lg border border-gray-400">
-                                    <img src="assets/copy-icon.png" alt="" class="w-5 h-5">
-                                    <span>Copy</span>
-                                </button>
-                                <button
-                                    class="flex items-center justify-center gap-2 py-2 rounded-lg bg-emerald-500 text-white">
-                                    <img src="assets/call-icon.png" alt="" class="w-5 h-5">
-                                    <span>Call</span>
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="service-cards bg-white p-6 rounded-lg shadow-sm">
-
-                            <div class="flex justify-between items-center">
-                                <div>
-                                    <img src="assets/emergency.png" alt="" class="w-10 h-10">
-                                </div>
-                                <button>
-                                    <img src="assets/heart.png" alt="" class="w-10 h-10">
-                                </button>
-                            </div>
-
-                            <div class="mt-4 ">
-                                <h2>জাতীয় জরুরি সেবা</h2>
-                                <p>National Emergency</p>
-                            </div>
-
-                            <div class="mt-4 ">
-                                <h2>999</h2>
-                                <p class="inline-block bg-gray-200 rounded-full px-3 py-2">সার্বজনীন</p>
-                            </div>
-
-                            <div class="grid grid-cols-2 gap-4 mt-6">
-                                <button
-                                    class="flex items-center justify-center gap-2 py-2 rounded-lg border border-gray-400">
-                                    <img src="assets/copy-icon.png" alt="" class="w-5 h-5">
-                                    <span>Copy</span>
-                                </button>
-                                <button
-                                    class="flex items-center justify-center gap-2 py-2 rounded-lg bg-emerald-500 text-white">
-                                    <img src="assets/call-icon.png" alt="" class="w-5 h-5">
-                                    <span>Call</span>
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="service-cards bg-white p-6 rounded-lg shadow-sm">
-
-                            <div class="flex justify-between items-center">
-                                <div>
-                                    <img src="assets/emergency.png" alt="" class="w-10 h-10">
-                                </div>
-                                <button>
-                                    <img src="assets/heart.png" alt="" class="w-10 h-10">
-                                </button>
-                            </div>
-
-                            <div class="mt-4 ">
-                                <h2>জাতীয় জরুরি সেবা</h2>
-                                <p>National Emergency</p>
-                            </div>
-
-                            <div class="mt-4 ">
-                                <h2>999</h2>
-                                <p class="inline-block bg-gray-200 rounded-full px-3 py-2">সার্বজনীন</p>
-                            </div>
-
-                            <div class="grid grid-cols-2 gap-4 mt-6">
-                                <button
-                                    class="flex items-center justify-center gap-2 py-2 rounded-lg border border-gray-400">
-                                    <img src="assets/copy-icon.png" alt="" class="w-5 h-5">
-                                    <span>Copy</span>
-                                </button>
-                                <button
-                                    class="flex items-center justify-center gap-2 py-2 rounded-lg bg-emerald-500 text-white">
-                                    <img src="assets/call-icon.png" alt="" class="w-5 h-5">
-                                    <span>Call</span>
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="service-cards bg-white p-6 rounded-lg shadow-sm">
-
-                            <div class="flex justify-between items-center">
-                                <div>
-                                    <img src="assets/emergency.png" alt="" class="w-10 h-10">
-                                </div>
-                                <button>
-                                    <img src="assets/heart.png" alt="" class="w-10 h-10">
-                                </button>
-                            </div>
-
-                            <div class="mt-4 ">
-                                <h2>জাতীয় জরুরি সেবা</h2>
-                                <p>National Emergency</p>
-                            </div>
-
-                            <div class="mt-4 ">
-                                <h2>999</h2>
-                                <p class="inline-block bg-gray-200 rounded-full px-3 py-2">সার্বজনীন</p>
-                            </div>
-
-                            <div class="grid grid-cols-2 gap-4 mt-6">
-                                <button
-                                    class="flex items-center justify-center gap-2 py-2 rounded-lg border border-gray-400">
-                                    <img src="assets/copy-icon.png" alt="" class="w-5 h-5">
-                                    <span>Copy</span>
-                                </button>
-                                <button
-                                    class="flex items-center justify-center gap-2 py-2 rounded-lg bg-emerald-500 text-white">
-                                    <img src="assets/call-icon.png" alt="" class="w-5 h-5">
-                                    <span>Call</span>
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="service-cards bg-white p-6 rounded-lg shadow-sm">
-
-                            <div class="flex justify-between items-center">
-                                <div>
-                                    <img src="assets/emergency.png" alt="" class="w-10 h-10">
-                                </div>
-                                <button>
-                                    <img src="assets/heart.png" alt="" class="w-10 h-10">
-                                </button>
-                            </div>
-
-                            <div class="mt-4 ">
-                                <h2>জাতীয় জরুরি সেবা</h2>
-                                <p>National Emergency</p>
-                            </div>
-
-                            <div class="mt-4 ">
-                                <h2>999</h2>
-                                <p class="inline-block bg-gray-200 rounded-full px-3 py-2">সার্বজনীন</p>
-                            </div>
-
-                            <div class="grid grid-cols-2 gap-4 mt-6">
-                                <button
-                                    class="flex items-center justify-center gap-2 py-2 rounded-lg border border-gray-400">
-                                    <img src="assets/copy-icon.png" alt="" class="w-5 h-5">
-                                    <span>Copy</span>
-                                </button>
-                                <button
-                                    class="flex items-center justify-center gap-2 py-2 rounded-lg bg-emerald-500 text-white">
-                                    <img src="assets/call-icon.png" alt="" class="w-5 h-5">
-                                    <span>Call</span>
-                                </button>
-                            </div>
-                        </div>
 
                     </div>
                 </section>
@@ -382,21 +177,23 @@
                 <aside id="call-history-section" class="lg:col-span-3">
                     <div class="p-6 rounded-lg shadow-sm">
 
+                        <!-- Call History Heading  -->
                         <div id="history-list-headings" class="flex justify-between items-center pb-4">
                             <div class="flex justify-between items-center gap-2">
                                 <img src="assets/heart.png" alt="" class="w-10 h-10">
-                                <h2 class="text=xl font-semibold">Call History</h2>
+                                <h2 class="text-xl font-semibold">Call History</h2>
                             </div>
 
-                            <button class="bg-emerald-500 font-semibold text-white px-4 py-1 rounded-full">Clear
+                            <button id="btn-clear" class="bg-emerald-500 font-semibold text-white px-4 py-1 rounded-full">Clear
                             </button>
                         </div>
 
-                        <div id="history-list-container mt-5 space-y-5">
+                        <!-- Call History List  -->
+                        <div id="history-list-container" class="mt-5 space-y-5">
                             <div class="flex justify-between items-center">
 
                                 <div>
-                                    <h2 id="history-service-name" class="font-semibold">Service Name</h2>
+                                    <p id="history-service-name" class="font-semibold">Service Name</p>
                                     <p id="history-service-number">Service Number</p>
                                 </div>
 
