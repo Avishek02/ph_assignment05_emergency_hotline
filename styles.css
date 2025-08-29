@@ -44,6 +44,13 @@ body {
     font-size: 1.5rem;
 }
 
+.font-hind-madurai-semibold {
+    font-family: "Hind Madurai", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2.5rem;
+}
+
 .font-hind-madurai-regular {
     font-family: "Hind Madurai", sans-serif;
     font-weight: 400;
