@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="script.js" defer></script>
+
+    <!-- Google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
     <title>Emergency Hotline</title>
 </head>
 
@@ -24,8 +32,8 @@
                 <img src="assets/hamburger-icon.png" alt="" class="w-10 h-10">
             </button>
 
-            <div id="counter-icons-container" 
-            class="hidden sm:flex flex-col sm:flex-row absolute sm:static top-full right-0 mt-2 sm:mt-0 items-end space-y-4 sm:space-y-0 space-x-0 sm:space-x-4 p-6 sm:p-0 bg-emerald-800 sm:bg-transparent">
+            <div id="counter-icons-container"
+                class="hidden sm:flex flex-col sm:flex-row absolute sm:static top-full right-0 mt-2 sm:mt-0 items-end space-y-4 sm:space-y-0 space-x-0 sm:space-x-4 p-6 sm:p-0 bg-emerald-800 sm:bg-transparent">
 
                 <div class="counter-icons flex items-center gap-2 px-3 py-1 bg-black/25 rounded-full w-fit">
                     <p id="favorite-counter" class="text-white sm:text-black">0</p>
@@ -67,42 +75,45 @@
                     <div id="left-column" class="grid grid-cols-1 xl:grid-cols-3 gap-6">
 
                         <!-- cards  -->
-                        <div class="service-cards bg-white p-6 rounded-lg shadow-sm">
+                        <div class="primary-bg-color service-cards bg-white p-8 rounded-xl shadow-md">
 
-                            <div class="flex justify-between items-center">
-                                <div>
-                                    <img src="assets/emergency.png" alt="" class="w-10 h-10">
+                            <!-- card top icons  -->
+                            <div class="cardIconsSection flex justify-between items-center">
+                                <div class="primary-bg-color w-15 h-15 rounded-2xl">
+                                    <img src="assets/emergency.png" alt="" class="w-8 h-8 m-3.5">
                                 </div>
                                 <button id="national-emergency-favorite-icon" class="favorite-icon">
                                     <img src="assets/empty-heart-icon.png" alt="" class="w-10 h-10">
                                 </button>
                             </div>
 
-                            <div class="mt-4 ">
-                                <p id="national-emergency-service-name">জাতীয় জরুরি সেবা</p>
-                                <p>National Emergency</p>
-                            </div>
 
                             <div class="mt-4 ">
-                                <p id="national-emergency-service-number">999</p>
-                                <p class="inline-block bg-gray-200 rounded-full px-3 py-2">সার্বজনীন</p>
+                                <p id="national-emergency-service-name" class="font-hind-madurai-bold text-black">জাতীয় জরুরি সেবা</p>
+                                <p class="font-hind-madurai-regular">National Emergency</p>
                             </div>
 
-                            <div class="grid grid-cols-2 gap-4 mt-6">
+                            <div class="mt-6 ">
+                                <p id="national-emergency-service-number" class="font-hind-madurai-bold text-black">999</p>
+                                <p class="font-hind-madurai-regular inline-block bg-gray-200 rounded-full px-4 py-1.5">সার্বজনীন</p>
+                            </div>
+
+                            <!-- card copy and call buttons  -->
+                            <div class="cardCopyCallButtons grid grid-cols-2 gap-2 mt-6">
                                 <button id="national-emergency-btn-copy"
-                                    class="flex items-center justify-center gap-2 py-2 rounded-lg border border-gray-400">
-                                    <img src="assets/copy-icon.png" alt="" class="w-5 h-5">
-                                    <span>Copy</span>
+                                    class="flex items-center justify-center gap-2 px-4 py-2 rounded-lg bg-white border border-gray-300">
+                                    <img src="assets/copy-icon.png" alt="" class="w-4 h-4">
+                                    <span class="font-roboto">Copy</span>
                                 </button>
                                 <button id="national-emergency-btn-call"
-                                    class="flex items-center justify-center gap-2 py-2 rounded-lg bg-emerald-500 text-white">
+                                    class="secondary-bg-color flex items-center justify-center gap-2 px-4 py-2 rounded-lg text-white">
                                     <img src="assets/call-icon.png" alt="" class="w-5 h-5">
-                                    <span>Call</span>
+                                    <span class="font-roboto">Call</span>
                                 </button>
                             </div>
                         </div>
 
-                        <div class="service-cards bg-white p-6 rounded-lg shadow-sm">
+                        <div class="service-cards bg-white p-6 rounded-lg ">
 
                             <div class="flex justify-between items-center">
                                 <div>
@@ -186,7 +197,8 @@
                                 <h2 class="text-xl font-semibold">Call History</h2>
                             </div>
 
-                            <button id="btn-clear" class="bg-emerald-500 font-semibold text-white px-4 py-1 rounded-full">Clear
+                            <button id="btn-clear"
+                                class="bg-emerald-500 font-semibold text-white px-4 py-1 rounded-full">Clear
                             </button>
                         </div>
 
