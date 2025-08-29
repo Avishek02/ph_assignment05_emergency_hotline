@@ -49,8 +49,8 @@ for (const button of callButtons) {
             const serviceNumberElement = document.getElementById(`${servicePrefix}-service-number`);
 
 
-            const serviceName = serviceNameElement.textContent;
-            const serviceNumber = serviceNumberElement.textContent;
+            const serviceName = serviceNameElement.textContent.replace(/\s+/g, ' ').trim();
+            const serviceNumber = serviceNumberElement.textContent.replace(/\s+/g, ' ').trim();
 
             const clickTime = getCurrentTime();
 
@@ -68,6 +68,9 @@ for (const button of callButtons) {
 
 
             callHistoryContainerElement.insertAdjacentHTML('afterbegin', callHistoryItemHTML);
+
+            alert(`Calling ${serviceName} ${serviceNumber}`);
+
         } else {
             alert("আপনার পর্যাপ্ত কয়েন নেই। কল করার জন্য কমপক্ষে ২০টি কয়েন লাগবে।");
         }
@@ -115,7 +118,6 @@ clearButton.addEventListener('click', () => {
 // Mobile responsive 
 const hambugerIcon = document.getElementById('icon-hamburger');
 const closeIcon = document.getElementById('icon-close');
-
 
 hamburgerButton.addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden');
