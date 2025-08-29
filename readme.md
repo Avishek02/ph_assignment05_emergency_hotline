@@ -1,6 +1,6 @@
 
 <!-- First Question  -->
-1. What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
+# 1. What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
 
 Answer : 
 # Element Selectors: getElementById vs. getElementsByClassName vs. querySelector. 
@@ -53,7 +53,7 @@ Example: const favoriteButtons = document.querySelectorAll('.favorite-icon');
 
 
 <!-- Second Question  -->
-2.How do you create and insert a new element into the DOM?
+# 2.How do you create and insert a new element into the DOM?
 
 First I will create an element object in memory and then append it to an existing element on the page.
 
@@ -85,7 +85,7 @@ parentDiv.appendChild(newParagraph);
 
 
 <!-- Third Question  -->
-3.What is Event Bubbling and how does it work?
+# 3.What is Event Bubbling and how does it work?
 
 
 Event bubbling is a fundamental concept in how the browser handles events. It describes the process where an event, fired on a specific element, is first handled by that element and then "bubbles up" to its parent, its parent's parent, and so on, all the way up to the window object.
@@ -149,7 +149,7 @@ Grandparent (div) was clicked
 
 
 <!-- Fourth Question  -->
-4. What is Event Delegation in JavaScript? Why is it useful?
+# 4. What is Event Delegation in JavaScript? Why is it useful?
 
 ## What is Event Delegation?
 Event delegation is a powerful and efficient technique where I attach a single event listener to a parent element to manage events for all of its child elements. Instead of adding a separate listener to each child, I let the events from the children bubble up to the parent and handle them there.
@@ -209,7 +209,7 @@ Clicking this new item will work immediately, no new listener needed.
 
 
 <!-- Fifth Question  -->
-5. What is the difference between preventDefault() and stopPropagation() methods?
+# 5. What is the difference between preventDefault() and stopPropagation() methods?
 
 
 While both preventDefault() and stopPropagation() are methods called on an event object, they control two completely different things. One stops the browser's default behavior, and the other stops the event's movement through the DOM.
