@@ -55,10 +55,10 @@ for (const button of callButtons) {
             const clickTime = getCurrentTime();
 
             const callHistoryItemHTML = `
-                        <div class="flex justify-between items-center">
+                        <div class="tertiary-bg-color font-hind-madurai-regular flex justify-between items-center p-4 rounded-lg gap-4">
 
-                            <div>
-                                <p class="font-semibold">${serviceName}</p>
+                            <div class = "space-y-1">
+                                <p >${serviceName}</p>
                                 <p >${serviceNumber}</p>
                             </div>
 
