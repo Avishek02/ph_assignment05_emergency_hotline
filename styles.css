@@ -24,10 +24,22 @@ body {
     background-color: #FAFAFA;
 }
 
+.fourth--bg-color{
+    background-color: rgba(65, 255, 107, 0.1);
+}
+
 
 
 
 /* Fonts  */
+.font-inter-bold {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
 .font-roboto {
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
@@ -69,4 +81,9 @@ body {
             #013223 0%,
             #006747 50%,
             #013223 100%);
+}
+
+
+.counter-icons{
+    border-radius: 3.125rem;
 }

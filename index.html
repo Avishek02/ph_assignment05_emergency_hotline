@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
     <title>Emergency Hotline</title>
@@ -22,31 +22,37 @@
 
     <!-- Header section  -->
     <header>
-        <nav class="container mx-auto flex justify-between items-center relative">
+        <!-- Nav bar  -->
+        <nav class="container mx-auto flex justify-between items-center relative px-15 py-6">
             <div id="branding-logo" class="flex items-center gap-3">
-                <img src="assets/logo.png" alt="" class="h-10 w-10">
+                <img src="assets/logo.png" alt="" class="h-14 w-14">
                 <p class="text-xl font-bold">Emergency<br>Service</p>
             </div>
 
+            <!-- Hamburger  -->
             <button id="btn-hamburger" class="p-2 sm:hidden">
                 <img src="assets/hamburger-icon.png" alt="" class="w-10 h-10">
             </button>
 
+            <!-- right side counter icons  -->
             <div id="counter-icons-container"
-                class="hidden sm:flex flex-col sm:flex-row absolute sm:static top-full right-0 mt-2 sm:mt-0 items-end space-y-4 sm:space-y-0 space-x-0 sm:space-x-4 p-6 sm:p-0 bg-emerald-800 sm:bg-transparent">
+                class="hidden sm:flex flex-col sm:flex-row absolute sm:static top-full right-0 mt-2 sm:mt-0 items-end space-y-4 sm:space-y-0 space-x-0 sm:space-x-5 p-6 sm:p-0 bg-emerald-800 sm:bg-transparent">
 
-                <div class="counter-icons flex items-center gap-2 px-3 py-1 bg-black/25 rounded-full w-fit">
-                    <p id="favorite-counter" class="text-white sm:text-black">0</p>
+                <!-- Favorite counter  -->
+                <div class="counter-icons fourth--bg-color flex items-center gap-2.5 px-5 py-3 w-fit">
+                    <p id="favorite-counter" class="font-inter-bold text-white sm:text-black">0</p>
                     <img src="assets/heart.png" alt="" class="h-6 w-6">
                 </div>
 
-                <div class="counter-icons flex items-center gap-2 px-3 py-1 bg-black/25 rounded-full w-fit">
+                <!-- Coin counter  -->
+                <div class="counter-icons fourth--bg-color flex items-center gap-2.5 px-5 py-3 w-fit">
                     <img src="assets/coin.png" alt="" class="h-6 w-6">
-                    <p id="coin-counter" class="text-white sm:text-black">100</p>
+                    <p id="coin-counter" class="font-inter-bold text-white sm:text-black">100</p>
                 </div>
 
-                <div class="counter-icons bg-emerald-500 text-white px-5 py-1 rounded-full w-fit">
-                    <p id="copy-counter-container"><span id="copy-counter">0</span> Copy</p>
+                <!-- Copy counter  -->
+                <div class="counter-icons secondary-bg-color text-white px-9 py-3 rounded-full w-fit">
+                    <p id="copy-counter-container" class="font-medium"><span id="copy-counter">0</span> Copy</p>
                 </div>
 
 
@@ -55,15 +61,17 @@
 
 
         <!-- Banner section  -->
-        <section id="banner-section" class=" my-10 flex flex-col items-center text-center gap-3 text-white px-15 py-6">
+        <section id="banner-section" class=" flex flex-col items-center text-center gap-3 text-white px-15 py-6">
             <img src="assets/logo-dark.png" alt="" class="h-24 w-24">
             <h1 class="font-hind-madurai-semibold">জরুরি সেবা ডিরেক্টরি</h1>
-            <p class="font-hind-madurai-semibold text-xl">Government Emergency Services at Your Fingertip – A Project by Government of the
+            <p class="font-hind-madurai-semibold text-xl">Government Emergency Services at Your Fingertip – A Project by
+                Government of the
                 People’s Republic of Bangladesh</p>
         </section>
     </header>
 
 
+    <!-- Main Section  -->
     <main>
         <div class="container mx-auto">
 
@@ -214,7 +222,8 @@
 
 
                             <div class="mt-4 ">
-                                <p id="ambulance-service-name" class="font-hind-madurai-bold text-black">অ্যাম্বুলেন্স</p>
+                                <p id="ambulance-service-name" class="font-hind-madurai-bold text-black">অ্যাম্বুলেন্স
+                                </p>
                                 <p class="font-hind-madurai-regular">Ambulance</p>
                             </div>
 
@@ -255,7 +264,8 @@
 
 
                             <div class="mt-4 ">
-                                <p id="women_child-help-service-name" class="font-hind-madurai-bold text-black">নারী ও শিশু সহায়তা</p>
+                                <p id="women_child-help-service-name" class="font-hind-madurai-bold text-black">নারী ও
+                                    শিশু সহায়তা</p>
                                 <p class="font-hind-madurai-regular">Women & Child Helpline</p>
                             </div>
 
@@ -337,12 +347,14 @@
 
 
                             <div class="mt-4 ">
-                                <p id="electricity-outage-service-name" class="font-hind-madurai-bold text-black">বিদ্যুৎ বিভ্রাট</p>
+                                <p id="electricity-outage-service-name" class="font-hind-madurai-bold text-black">
+                                    বিদ্যুৎ বিভ্রাট</p>
                                 <p class="font-hind-madurai-regular">Electricity Outage</p>
                             </div>
 
                             <div class="mt-6 ">
-                                <p id="electricity-outage-service-number" class="font-hind-madurai-bold text-black">16216
+                                <p id="electricity-outage-service-number" class="font-hind-madurai-bold text-black">
+                                    16216
                                 </p>
                                 <p class="font-hind-madurai-regular inline-block bg-gray-200 rounded-full px-4 py-1.5">
                                     বিদ্যুৎ</p>
@@ -419,7 +431,8 @@
 
 
                             <div class="mt-4 ">
-                                <p id="bangladesh-railway-service-name" class="font-hind-madurai-bold text-black">বাংলাদেশ রেলওয়ে</p>
+                                <p id="bangladesh-railway-service-name" class="font-hind-madurai-bold text-black">
+                                    বাংলাদেশ রেলওয়ে</p>
                                 <p class="font-hind-madurai-regular">Bangladesh Railway</p>
                             </div>
 
