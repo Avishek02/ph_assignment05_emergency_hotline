@@ -69,7 +69,7 @@ for (const button of callButtons) {
 
             callHistoryContainerElement.insertAdjacentHTML('afterbegin', callHistoryItemHTML);
         } else {
-            alert("You have no coins left to call");
+            alert("আপনার পর্যাপ্ত কয়েন নেই। কল করার জন্য কমপক্ষে ২০টি কয়েন লাগবে।");
         }
 
 
@@ -88,11 +88,11 @@ for (const button of copyButtons) {
 
         const servicePrefix = button.id.replace('-btn-copy', '');
         const serviceNumberElement = document.getElementById(`${servicePrefix}-service-number`);
-        const numberToCopy = serviceNumberElement.textContent;
+        const numberToCopy = serviceNumberElement.textContent.trim();
 
 
         navigator.clipboard.writeText(numberToCopy).then(() => {
-            alert(`${numberToCopy} copied to clipboard`);
+            alert(`${numberToCopy} নাম্বারটি কপি হয়েছে`);
         }).catch(err =>{
             console.error('could not copy text', err);
         });
@@ -113,8 +113,13 @@ clearButton.addEventListener('click', () => {
 
 
 // Mobile responsive 
+const hambugerIcon = document.getElementById('icon-hamburger');
+const closeIcon = document.getElementById('icon-close');
+
+
 hamburgerButton.addEventListener('click', () => {
-    // alert('hamberger clicked')
     mobileMenu.classList.toggle('hidden');
+    hambugerIcon.classList.toggle('hidden');
+    closeIcon.classList.toggle('hidden');
 });
 
