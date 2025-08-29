@@ -178,7 +178,7 @@ parentList.addEventListener('click', function(event) {
   }
 });
 
-When I click on any list item, the event bubbles up to the <ul>, the listener fires, and event.target correctly identifies the <li> that was clicked.
+When I click on any list item, the event bubbles up to the ul, the listener fires, and event.target correctly identifies the li that was clicked.
 
 
 ## Why It's Useful
